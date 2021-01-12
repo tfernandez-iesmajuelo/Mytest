@@ -26,7 +26,9 @@ https://blog.desdelinux.net/guia-rapida-para-utilizar-github/
  git merge mirama
  git branch -d mirama
  git push origin master
- cd ..
+
+#Borrar git config
+ cd ~
  rm .gitconfig 
  
 
