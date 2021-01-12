@@ -1,0 +1,32 @@
+https://blog.desdelinux.net/guia-rapida-para-utilizar-github/
+
+
+ git config --global user.name "tfernadez-iesmajuelo"
+ git config --global user.email "tfernandez@iesmajuelo.com"
+ cd Documentos/
+ mkdir git
+ cd git/
+ git init Mytest
+ cd Mytest/
+ pluma README
+ pluma ejemplo.c
+ git add README 
+ git add ejemplo.c 
+ git commit -m "comm1"
+## Crear el repositorio Mytest en github
+ git remote add origin https://github.com/tfernandez-iesmajuelo/Mytest
+ git push origin master
+ git branch mirama
+ git checkout mirama
+ pluma README 
+ pluma ejemplo.c 
+ git add .
+ git commit -m "cambios en mirama"
+ git checkout master
+ git merge mirama
+ git branch -d mirama
+ git push origin master
+ cd ..
+ rm .gitconfig 
+ 
+
